@@ -1,0 +1,4 @@
+var beaches = <%= @beaches.to_json.html_safe %>;
+for (var i = 0; i < beaches.length; i++) {
+  addMarker(beaches[i][0], beaches[i][1], beaches[i][2]);
+}
